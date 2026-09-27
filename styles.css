@@ -208,3 +208,36 @@ pre{margin:8px 0 0;background:#22331f;color:#dcefd2;padding:14px 16px;border-rad
   .section{padding-top:44px}
   th,td{padding:9px 10px;font-size:13px}
 }
+
+/* project card clickable */
+.pcard{cursor:pointer}
+.pcard:focus-visible{outline:3px solid var(--grass2);outline-offset:2px}
+.pcard .more{display:inline-block;margin-top:12px;font-size:12.5px;font-weight:800;color:var(--grass)}
+.pcard:hover .more{text-decoration:underline}
+
+/* modal */
+.modal{position:fixed;inset:0;z-index:100;display:flex;align-items:center;justify-content:center;padding:20px}
+.modal[hidden]{display:none}
+.modal-backdrop{position:absolute;inset:0;background:rgba(20,30,18,.55);backdrop-filter:blur(3px)}
+.modal-panel{position:relative;z-index:1;width:min(720px,100%);max-height:86vh;overflow:auto;
+  background:var(--card);border-radius:18px;box-shadow:0 30px 70px rgba(20,30,18,.35);padding:26px 28px}
+.modal-close{position:absolute;top:14px;right:16px;width:34px;height:34px;border:1px solid var(--line);
+  background:#fff;border-radius:10px;font-size:22px;line-height:1;color:#51604d;cursor:pointer}
+.modal-close:hover{border-color:var(--grass);color:var(--grass)}
+.modal-head{border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:16px}
+.modal-head .m-tag{display:inline-block;font-size:12px;font-weight:800;color:#fff;border-radius:999px;padding:3px 12px;margin-bottom:8px}
+.modal-head h3{font-size:24px;font-weight:900}
+.modal-head .m-en{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#93a08e;font-weight:800}
+.modal-sec{margin-bottom:16px}
+.modal-sec h4{font-size:15px;font-weight:900;margin-bottom:6px;padding-left:10px;border-left:4px solid var(--grass)}
+.modal-sec ul{margin:0;padding-left:20px}
+.modal-sec li{font-size:13.5px;color:#3c4d36;margin:3px 0}
+.modal-cfg{display:grid;grid-template-columns:1fr 1fr;gap:8px 16px;margin-top:6px}
+.modal-cfg .row{display:flex;justify-content:space-between;gap:10px;font-size:13px;
+  padding:8px 12px;border-radius:9px;background:var(--grass-soft)}
+.modal-cfg .row span{color:var(--muted);font-weight:700}
+@media(max-width:560px){
+  .modal-panel{padding:20px 16px;border-radius:14px}
+  .modal-cfg{grid-template-columns:1fr}
+}
+
