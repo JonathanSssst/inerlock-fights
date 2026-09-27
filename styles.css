@@ -253,12 +253,11 @@ pre{margin:8px 0 0;background:#22331f;color:#dcefd2;padding:14px 16px;border-rad
 }
 
 /* ===== 详情页背景（项目封面 + 毛玻璃） ===== */
-body.detail-page::before{content:"";position:fixed;inset:0;z-index:-1;
-  background-size:cover;background-position:center;background-repeat:no-repeat}
-body.bg-bedwars::before{background-image:linear-gradient(rgba(244,248,240,.80),rgba(244,248,240,.92)),url('assets/project-bedwars.png')}
-body.bg-desert::before{background-image:linear-gradient(rgba(244,248,240,.80),rgba(244,248,240,.92)),url('assets/project-desert.png')}
-body.bg-siege::before{background-image:linear-gradient(rgba(244,248,240,.80),rgba(244,248,240,.92)),url('assets/project-siege.png')}
-body.bg-frostbite::before{background-image:linear-gradient(rgba(244,248,240,.80),rgba(244,248,240,.92)),url('assets/project-frostbite.png')}
+body.detail-page{background:#eef4e8 center/cover no-repeat fixed}
+body.bg-bedwars{background:linear-gradient(rgba(244,248,240,.82),rgba(244,248,240,.92)),url('assets/project-bedwars.png') center/cover no-repeat fixed}
+body.bg-desert{background:linear-gradient(rgba(244,248,240,.82),rgba(244,248,240,.92)),url('assets/project-desert.png') center/cover no-repeat fixed}
+body.bg-siege{background:linear-gradient(rgba(244,248,240,.82),rgba(244,248,240,.92)),url('assets/project-siege.png') center/cover no-repeat fixed}
+body.bg-frostbite{background:linear-gradient(rgba(244,248,240,.82),rgba(244,248,240,.92)),url('assets/project-frostbite.png') center/cover no-repeat fixed}
 body.detail-page .detail-head,
 body.detail-page .detail-sec{
   background:rgba(255,255,255,.58);
