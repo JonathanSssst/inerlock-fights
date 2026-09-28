@@ -65,6 +65,9 @@ p{margin:0}
 .hero h1{font-size:clamp(40px,7vw,72px);font-weight:900;letter-spacing:1px;margin:18px 0 6px;color:#22331f;
   text-shadow:3px 3px 0 rgba(106,176,76,.18)}
 .hero h1 .gold{color:var(--gold)}
+.hero-title{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.hero-title-img{height:clamp(64px,11vw,132px);width:auto;display:block;
+  filter:drop-shadow(3px 4px 0 rgba(106,176,76,.18))}
 .sub{font-size:clamp(15px,2.4vw,19px);font-weight:800;color:#3c4d36}
 .lead{margin-top:12px;color:var(--muted);max-width:46ch}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
