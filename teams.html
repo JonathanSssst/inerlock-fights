@@ -6,7 +6,7 @@
 <meta name="description" content="联锁对抗S0 · 参赛队伍总览">
 <title>参赛队伍 · 联锁对抗S0</title>
 <link rel="icon" href="assets/海报-圆形版.png">
-<link rel="stylesheet" href="styles.css?v=4">
+<link rel="stylesheet" href="styles.css?v=5">
 </head>
 <body>
 
@@ -50,10 +50,10 @@
       <table>
         <thead><tr><th>编号</th><th>队伍</th><th>学校</th><th>队员</th></tr></thead>
         <tbody>
-          <tr><td>1</td><td>待定1</td><td>厦门双十中学</td><td>OOrangeee7794、MZYX99、k7zrx、lapis_lazuli、roger</td></tr>
-          <tr><td>2</td><td>dewier</td><td>厦门市集美中学</td><td>CabbageFani、ld8zz、Rocketssaid、Moibalao、?</td></tr>
-          <tr><td>3</td><td>待定3</td><td>厦门海沧实验中学 / 厦门同安一中滨海校区</td><td>12Glad、Qute_Girl_Poxiao、Shino_wu、lookhilo</td></tr>
-          <tr><td>4</td><td>待定4</td><td>厦门外国语学校 / 厦门英才学校 / 义乌市第五中学</td><td>watch_the_moon、Broken_Mirror、odoo、chixue_bypass_</td></tr>
+          <tr><td>1</td><td>待定1</td><td>厦门双十中学</td><td>OOrangeee7794、MZYX99、k7zrx、lapis_lazuli、roger（队长待定）</td></tr>
+          <tr><td>2</td><td>dewier</td><td>厦门市集美中学</td><td>CabbageFani（队长）、ld8zz、Rocketssaid、Moibalao、?</td></tr>
+          <tr><td>3</td><td>待定3</td><td>厦门海沧实验中学 / 厦门同安一中滨海校区</td><td>12Glad、Qute_Girl_Poxiao、Shino_wu、lookhilo（队长待定）</td></tr>
+          <tr><td>4</td><td>待定4</td><td>厦门外国语学校 / 厦门英才学校 / 义乌市第五中学</td><td>watch_the_moon、Broken_Mirror、odoo、chixue_bypass_（队长待定）</td></tr>
         </tbody>
       </table>
     </div>
@@ -78,8 +78,8 @@
   </div>
 </footer>
 
-<script src="app.js?v=4"></script>
-<script src="data/teams.js"></script>
+<script src="app.js?v=5"></script>
+<script src="data/teams.js?v=5"></script>
 <script>
 (function () {
   'use strict';
@@ -125,11 +125,22 @@
     name.textContent = t.name;
     top.appendChild(name);
 
-    if (t.placeholder) {
-      var tag = document.createElement('span');
-      tag.className = 'team-tag';
-      tag.textContent = '队名待定';
-      top.appendChild(tag);
+    if (t.placeholder || t.captainTBD) {
+      var tags = document.createElement('span');
+      tags.className = 'team-tags';
+      if (t.placeholder) {
+        var tag = document.createElement('span');
+        tag.className = 'team-tag';
+        tag.textContent = '队名待定';
+        tags.appendChild(tag);
+      }
+      if (t.captainTBD) {
+        var ctag = document.createElement('span');
+        ctag.className = 'team-tag is-tbd';
+        ctag.textContent = '队长待定';
+        tags.appendChild(ctag);
+      }
+      top.appendChild(tags);
     }
     card.appendChild(top);
 
@@ -147,8 +158,17 @@
     ul.className = 'roster';
     t.members.forEach(function (m) {
       var li = document.createElement('li');
-      if (m.pending) li.className = 'is-pending';
+      var cls = [];
+      if (m.pending) cls.push('is-pending');
+      if (m.captain) cls.push('is-captain');
+      if (cls.length) li.className = cls.join(' ');
       li.textContent = m.mcid;
+      if (m.captain) {
+        var badge = document.createElement('b');
+        badge.className = 'cap-badge';
+        badge.textContent = '队长';
+        li.appendChild(badge);
+      }
       ul.appendChild(li);
     });
     card.appendChild(ul);

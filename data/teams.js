@@ -6,6 +6,7 @@ window.LSF_TEAMS = {
       "id": 1,
       "name": "待定1",
       "placeholder": true,
+      "captainTBD": true,
       "schools": ["厦门双十中学"],
       "members": [
         { "mcid": "OOrangeee7794" },
@@ -21,7 +22,7 @@ window.LSF_TEAMS = {
       "placeholder": false,
       "schools": ["厦门市集美中学"],
       "members": [
-        { "mcid": "CabbageFani" },
+        { "mcid": "CabbageFani", "captain": true },
         { "mcid": "ld8zz" },
         { "mcid": "Rocketssaid" },
         { "mcid": "Moibalao" },
@@ -32,6 +33,7 @@ window.LSF_TEAMS = {
       "id": 3,
       "name": "待定3",
       "placeholder": true,
+      "captainTBD": true,
       "schools": ["厦门海沧实验中学", "厦门同安一中滨海校区"],
       "members": [
         { "mcid": "12Glad" },
@@ -44,6 +46,7 @@ window.LSF_TEAMS = {
       "id": 4,
       "name": "待定4",
       "placeholder": true,
+      "captainTBD": true,
       "schools": ["厦门外国语学校", "厦门英才学校", "义乌市第五中学"],
       "members": [
         { "mcid": "watch_the_moon" },
