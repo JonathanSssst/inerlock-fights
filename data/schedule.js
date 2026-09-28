@@ -1,0 +1,30 @@
+window.LSF_SCHEDULE = {
+  "updated": "2026-09-29",
+  "event": "联锁对抗S0",
+  "placeholder": "比赛未开始",
+  "days": [
+    {
+      "label": "10.3",
+      "date": "2026-10-03",
+      "title": "第一比赛日",
+      "items": [
+        { "time": "18:30–19:00", "project": "全体", "stage": "签到 / 准备", "match": "—", "score": "—" },
+        { "time": "19:00–20:00", "project": "起床战争", "stage": "混战 4v4v4v4", "match": "比赛未开始", "score": "比赛未开始" },
+        { "time": "20:00–22:00", "project": "霜冻狂潮", "stage": "竞技 4v4 · 积分赛", "match": "比赛未开始", "score": "比赛未开始" },
+        { "time": "22:00–22:30", "project": "—", "stage": "当日积分公布", "match": "—", "score": "—" }
+      ]
+    },
+    {
+      "label": "10.4",
+      "date": "2026-10-04",
+      "title": "第二比赛日",
+      "items": [
+        { "time": "18:30–19:00", "project": "全体", "stage": "签到 / 准备", "match": "—", "score": "—" },
+        { "time": "19:00–20:00", "project": "荒芜沙漠", "stage": "混战 4v4v4v4", "match": "比赛未开始", "score": "比赛未开始" },
+        { "time": "20:00–22:00", "project": "空岛围攻", "stage": "竞技 4v4 · 积分赛", "match": "比赛未开始", "score": "比赛未开始" },
+        { "time": "22:00–22:30", "project": "—", "stage": "总积分结算", "match": "—", "score": "—" },
+        { "time": "22:30–23:00", "project": "—", "stage": "颁奖 / 闭幕", "match": "—", "score": "—" }
+      ]
+    }
+  ]
+};

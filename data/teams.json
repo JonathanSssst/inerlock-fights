@@ -1,0 +1,56 @@
+{
+  "updated": "2026-09-29",
+  "event": "联锁对抗S0",
+  "teams": [
+    {
+      "id": 1,
+      "name": "待定1",
+      "placeholder": true,
+      "schools": ["厦门双十中学"],
+      "members": [
+        { "mcid": "OOrangeee7794" },
+        { "mcid": "MZYX99" },
+        { "mcid": "k7zrx" },
+        { "mcid": "lapis_lazuli" },
+        { "mcid": "roger" }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "dewier",
+      "placeholder": false,
+      "schools": ["厦门市集美中学"],
+      "members": [
+        { "mcid": "CabbageFani" },
+        { "mcid": "ld8zz" },
+        { "mcid": "Rocketssaid" },
+        { "mcid": "Moibalao" },
+        { "mcid": "?", "pending": true }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "待定3",
+      "placeholder": true,
+      "schools": ["厦门海沧实验中学", "厦门同安一中滨海校区"],
+      "members": [
+        { "mcid": "12Glad" },
+        { "mcid": "Qute_Girl_Poxiao" },
+        { "mcid": "Shino_wu" },
+        { "mcid": "lookhilo" }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "待定4",
+      "placeholder": true,
+      "schools": ["厦门外国语学校", "厦门英才学校", "义乌市第五中学"],
+      "members": [
+        { "mcid": "watch_the_moon" },
+        { "mcid": "Broken_Mirror" },
+        { "mcid": "odoo" },
+        { "mcid": "chixue_bypass_" }
+      ]
+    }
+  ]
+}

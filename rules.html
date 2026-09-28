@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="联锁对抗S0 · 赛制与积分规则">
+<title>赛制与积分 · 联锁对抗S0</title>
+<link rel="icon" href="assets/海报-圆形版.png">
+<link rel="stylesheet" href="styles.css?v=4">
+</head>
+<body>
+
+<a class="skip" href="#main">跳到内容</a>
+<div class="progress" id="progress"></div>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html"><img src="assets/海报-圆形版.png" alt="联锁对抗S0"><span>联锁对抗<em>S0</em></span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="菜单">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html#about">概述</a>
+      <a href="projects.html">项目</a>
+      <a href="rules.html" class="active">赛制计分</a>
+      <a href="teams.html">队伍</a>
+      <a href="schedule.html">赛程</a>
+      <a href="index.html#awards">奖项</a>
+      <a href="index.html#clubs">社团</a>
+      <a class="nav-cta" href="index.html#join">报名</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="section">
+  <div class="sec-head">
+    <span class="blk"></span>
+    <div><h2>赛制与积分</h2><p>参照《联锁对抗S0 · 赛事细则》</p></div>
+  </div>
+
+  <h3 class="sub-head">混战项目：起床战争、荒芜沙漠</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>项目</th><th>参赛基础分</th><th>第 1 名</th><th>第 2 名</th><th>第 3 名</th><th>第 4 名</th><th>拆床</th><th>击杀（上限 30）</th></tr></thead>
+      <tbody>
+        <tr><td>起床战争</td><td>+5</td><td class="g">+40</td><td>+25</td><td>+15</td><td>+8</td><td>+10 / 张</td><td>+3 / 次</td></tr>
+        <tr><td>荒芜沙漠</td><td>+5</td><td class="g">+30</td><td>+20</td><td>+12</td><td>+6</td><td>—</td><td>+3 / 次</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="sub-head">竞技项目：空岛围攻、霜冻狂潮（非淘汰积分制）</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>项目</th><th>参赛基础分</th><th>单场胜利</th><th>击杀（上限 30）</th></tr></thead>
+      <tbody>
+        <tr><td>空岛围攻</td><td>+5</td><td class="g">+12</td><td>+3 / 次</td></tr>
+        <tr><td>霜冻狂潮</td><td>+5</td><td class="g">+15</td><td>+3 / 次</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="note">霜冻狂潮另设四项个人奖项，各 +10：❄ 绝对零度（冻结最多）/ ♨ 生命线（救援最多）/ ⚑ 据点之王（占点得分最高）/ ✦ 道具大师（道具使用最多）；同一选手可兼得多个。</div>
+
+  <div class="two-col">
+    <div class="panel">
+      <h4>总积分</h4>
+      <p>总积分 = 四个项目积分之和。</p>
+      <p class="muted">若总积分相同，依次比较：01 起床战争 → 02 荒芜沙漠 → 03 空岛围攻 → 04 霜冻狂潮。</p>
+    </div>
+    <div class="panel">
+      <h4>竞技项目赛制（非淘汰积分制）</h4>
+      <p><b>空岛围攻</b>：每轮两局，两队 <b>互换攻守</b> 各进攻一次；每局进攻方限时完成「3 选 2」则进攻方得分，否则防守方得分。</p>
+      <p class="muted"><b>霜冻狂潮</b>：围绕控制点累计分数，先达到胜利分数（500）的一方得分；双方同时到达则进入加时。按项目累计积分排名，<b>不设淘汰</b>。</p>
+    </div>
+  </div>
+
+  <div class="note">平局：01 起床战争打到只剩一队、不设平局；02 荒芜沙漠为地图死亡竞赛超时机制（超时仍多队存活由裁判裁定名次）；03/04 为非淘汰积分制、每局各自记分，不产生平局。</div>
+
+  <h3 class="sub-head">违规与判罚</h3>
+  <ul class="tick">
+    <li><b>禁止作弊</b>：连点（AC）、自动搭路（Scaffold）、自动瞄准 / KillAura、透视 / 矿透、飞行、加速、卡 BUG、代打、跨队合作、故意送分、消极比赛、辱骂、故意拖延。</li>
+    <li><b>反作弊</b>：四个项目均开启反作弊（02 为地图内，01 / 03 / 04 由服务器 / 管理侧开启）；按情节警告 → 扣分 → 判负 → 取消资格。</li>
+    <li><b>模组 / 材质包</b>：仅允许不带来竞技优势的优化类模组与材质包（白名单见《赛事细则》§六）；禁止战斗 / 自动化 / 透视类模组。</li>
+    <li><b>断线</b>：5 分钟内可重连，超时判负；服务器问题可重赛。</li>
+    <li><b>替补</b>：替补人数不限；场上选手异常超 1 分钟，裁判按顺序派替补上场，选手也可主动申请（经裁判同意）。</li>
+    <li><b>开赛</b>：正常需 01/02 四队各满 4 人、03/04 两队各满 4 人；异常缺人经裁判确认可开赛。</li>
+    <li>每场 1 裁判 + 1 OB，<b>全程直播 + 录制</b>；裁判判罚为最终结果，争议需在 30 分钟内提交。</li>
+  </ul>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div><b>MXHA 联锁对抗S0 组委会</b><p>2026 年 9 月 · 最终解释权归组委会所有</p></div>
+    <div class="footer-links">
+      <a href="index.html">首页</a>
+      <a href="projects.html">项目</a>
+      <a href="teams.html">队伍</a>
+      <a href="schedule.html">赛程</a>
+      <a href="index.html#join">报名</a>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js?v=4"></script>
+</body>
+</html>

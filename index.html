@@ -6,7 +6,7 @@
 <meta name="description" content="联锁对抗S0 · 厦门多校联合 Minecraft 竞技赛｜四大项目 · 积分赛制｜2026.10.03–10.04">
 <title>联锁对抗S0 · 厦门多校联合 Minecraft 竞技赛</title>
 <link rel="icon" href="assets/海报-圆形版.png">
-<link rel="stylesheet" href="styles.css?v=2">
+<link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
 
@@ -15,19 +15,20 @@
 
 <header class="nav" id="nav">
   <div class="nav-inner">
-    <a class="brand" href="#home">
+    <a class="brand" href="index.html">
       <img src="assets/海报-圆形版.png" alt="联锁对抗S0">
       <span>联锁对抗<em>S0</em></span>
     </a>
     <button class="nav-toggle" id="navToggle" aria-label="菜单">☰</button>
     <nav class="nav-links" id="navLinks">
-      <a href="#about">概述</a>
-      <a href="#projects">项目</a>
-      <a href="#rules">赛制计分</a>
-      <a href="#schedule">赛程</a>
-      <a href="#awards">奖项</a>
-      <a href="#clubs">社团</a>
-      <a class="nav-cta" href="#join">报名</a>
+      <a href="index.html#about">概述</a>
+      <a href="projects.html">项目</a>
+      <a href="rules.html">赛制计分</a>
+      <a href="teams.html">队伍</a>
+      <a href="schedule.html">赛程</a>
+      <a href="index.html#awards">奖项</a>
+      <a href="index.html#clubs">社团</a>
+      <a class="nav-cta" href="index.html#join">报名</a>
     </nav>
   </div>
 </header>
@@ -50,8 +51,8 @@
         <span class="chip">2026.10.03 – 10.04</span>
       </div>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="#join">立即报名</a>
-        <a class="btn btn-ghost" href="#projects">查看项目</a>
+        <a class="btn btn-primary" href="index.html#join">立即报名</a>
+        <a class="btn btn-ghost" href="projects.html">查看项目</a>
       </div>
       <div class="countdown" id="countdown" data-target="2026-10-03T18:30:00+08:00"></div>
     </div>
@@ -80,150 +81,52 @@
   </div>
 </section>
 
-<!-- ================= 项目 ================= -->
-<section class="section" id="projects">
+<!-- ================= 快捷入口 ================= -->
+<section class="section" id="hub">
   <div class="sec-head">
     <span class="blk"></span>
-    <div><h2>比赛项目</h2><p>四大项目 · 队伍全项目参赛</p></div>
+    <div><h2>快速入口</h2><p>点击进入对应页面</p></div>
   </div>
-  <div class="projects">
-
-    <a class="pcard" data-accent="#E05252" href="projects/bedwars.html">
-      <div class="pcover" style="background:linear-gradient(135deg,#3a2b2b,#7a3030)">
-        <img src="assets/project-bedwars.png" alt="" onerror="this.remove()">
-      </div>
-      <div class="pbody">
-        <div class="ptag">01 · 混战 · 4v4v4v4</div>
-        <h3>起床战争</h3>
-        <div class="pen">Bed Wars</div>
-        <p>保护己方床铺、摧毁对手的床，床被破坏后阵亡即无法复活；团灭其余全部队伍即获胜。</p>
-        <span class="more">查看游戏机制 →</span>
-      </div>
+  <div class="hub-grid">
+    <a class="hub-card" href="projects.html">
+      <span class="hnum">01</span>
+      <h3>比赛项目</h3>
+      <p>四大项目机制与流程</p>
+      <span class="harrow">进入 →</span>
     </a>
-
-    <a class="pcard" data-accent="#E0A83B" href="projects/desert.html">
-      <div class="pcover">
-        <img src="assets/project-desert.png" alt="" onerror="this.remove()">
-      </div>
-      <div class="pbody">
-        <div class="ptag">02 · 混战 · 4v4v4v4</div>
-        <h3>荒芜沙漠</h3>
-        <div class="pen">Desolate Desert</div>
-        <p>1000×1000 的大型生存游戏：搜集宝箱物资、随边界收缩交战，最后存活的队伍获胜。</p>
-        <span class="more">查看游戏机制 →</span>
-      </div>
+    <a class="hub-card" href="rules.html">
+      <span class="hnum">02</span>
+      <h3>赛制与积分</h3>
+      <p>名次分 · 击杀分 · 竞技规则</p>
+      <span class="harrow">进入 →</span>
     </a>
-
-    <a class="pcard" data-accent="#8E7CE0" href="projects/siege.html">
-      <div class="pcover">
-        <img src="assets/project-siege.png" alt="" onerror="this.remove()">
-      </div>
-      <div class="pbody">
-        <div class="ptag">03 · 竞技 · 4v4 · 非淘汰积分制</div>
-        <h3>空岛围攻</h3>
-        <div class="pen">Island Siege</div>
-        <p>不对称攻防：蓝队构筑工事、红队搭桥突袭，红队在限时内完成三个目标中的两个即胜；每轮两局，两队互换攻守。</p>
-        <span class="more">查看游戏机制 →</span>
-      </div>
+    <a class="hub-card" href="schedule.html">
+      <span class="hnum">03</span>
+      <h3>赛程安排</h3>
+      <p>10.3 – 10.4 时间表</p>
+      <span class="harrow">进入 →</span>
     </a>
-
-    <a class="pcard" data-accent="#4FA3E0" href="projects/frostbite.html">
-      <div class="pcover">
-        <img src="assets/project-frostbite.png" alt="" onerror="this.remove()">
-      </div>
-      <div class="pbody">
-        <div class="ptag">04 · 竞技 · 4v4 · 非淘汰积分制</div>
-        <h3>霜冻狂潮</h3>
-        <div class="pen">Frostbite Frenzy</div>
-        <p>冻结敌人、救援队友，围绕控制点积累分数；先达到胜利分数的一方获胜。</p>
-        <span class="more">查看游戏机制 →</span>
-      </div>
-    </a>
-
   </div>
-  <div class="note">队伍参加全部四个项目，缺项按该项目最后一名积分计算，且不计入参赛基础分。</div>
 </section>
 
-<!-- ================= 赛制计分 ================= -->
-<section class="section" id="rules">
+<!-- ================= 队伍预览 ================= -->
+<section class="section" id="teams">
   <div class="sec-head">
     <span class="blk"></span>
-    <div><h2>赛制与积分</h2><p>参照《联锁对抗S0 · 赛事细则》</p></div>
+    <div><h2>参赛队伍</h2><p>共 4 支队伍 · 队伍全项目参赛</p></div>
   </div>
-
-  <h3 class="sub-head">混战项目：起床战争、荒芜沙漠</h3>
-  <div class="table-wrap">
-    <table>
-      <thead><tr><th>项目</th><th>参赛基础分</th><th>第 1 名</th><th>第 2 名</th><th>第 3 名</th><th>第 4 名</th><th>拆床</th><th>击杀（上限 30）</th></tr></thead>
-      <tbody>
-        <tr><td>起床战争</td><td>+5</td><td class="g">+40</td><td>+25</td><td>+15</td><td>+8</td><td>+10 / 张</td><td>+3 / 次</td></tr>
-        <tr><td>荒芜沙漠</td><td>+5</td><td class="g">+30</td><td>+20</td><td>+12</td><td>+6</td><td>—</td><td>+3 / 次</td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <h3 class="sub-head">竞技项目：空岛围攻、霜冻狂潮（非淘汰积分制）</h3>
-  <div class="table-wrap">
-    <table>
-      <thead><tr><th>项目</th><th>参赛基础分</th><th>单场胜利</th><th>击杀（上限 30）</th></tr></thead>
-      <tbody>
-        <tr><td>空岛围攻</td><td>+5</td><td class="g">+12</td><td>+3 / 次</td></tr>
-        <tr><td>霜冻狂潮</td><td>+5</td><td class="g">+15</td><td>+3 / 次</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="note">霜冻狂潮另设四项个人奖项，各 +10：❄ 绝对零度（冻结最多）/ ♨ 生命线（救援最多）/ ⚑ 据点之王（占点得分最高）/ ✦ 道具大师（道具使用最多）；同一选手可兼得多个。</div>
-
-  <div class="two-col">
-    <div class="panel">
-      <h4>总积分</h4>
-      <p>总积分 = 四个项目积分之和。</p>
-      <p class="muted">若总积分相同，依次比较：01 起床战争 → 02 荒芜沙漠 → 03 空岛围攻 → 04 霜冻狂潮。</p>
+  <div class="team-preview" id="teamPreview"></div>
+  <noscript>
+    <div class="team-preview">
+      <a class="tmini" href="teams.html"><span class="tmini-head"><span class="tmini-num">1</span><span class="tmini-name">待定1</span></span><span class="tmini-meta">5 人 · 厦门双十中学</span></a>
+      <a class="tmini" href="teams.html"><span class="tmini-head"><span class="tmini-num">2</span><span class="tmini-name">dewier</span></span><span class="tmini-meta">5 人 · 厦门市集美中学</span></a>
+      <a class="tmini" href="teams.html"><span class="tmini-head"><span class="tmini-num">3</span><span class="tmini-name">待定3</span></span><span class="tmini-meta">4 人 · 海沧实验 / 同安一中滨海</span></a>
+      <a class="tmini" href="teams.html"><span class="tmini-head"><span class="tmini-num">4</span><span class="tmini-name">待定4</span></span><span class="tmini-meta">4 人 · 外国语 / 英才 / 义乌五中</span></a>
     </div>
-    <div class="panel">
-      <h4>竞技项目赛制（非淘汰积分制）</h4>
-      <p><b>空岛围攻</b>：每轮两局，两队 <b>互换攻守</b> 各进攻一次；每局进攻方限时完成「3 选 2」则进攻方得分，否则防守方得分。</p>
-      <p class="muted"><b>霜冻狂潮</b>：围绕控制点累计分数，先达到胜利分数（500）的一方得分；双方同时到达则进入加时。按项目累计积分排名，<b>不设淘汰</b>。</p>
-    </div>
+  </noscript>
+  <div class="hero-actions" style="margin-top:18px">
+    <a class="btn btn-primary" href="teams.html">查看全部队伍 →</a>
   </div>
-
-  <div class="note">平局：01 起床战争打到只剩一队、不设平局；02 荒芜沙漠为地图死亡竞赛超时机制（超时仍多队存活由裁判裁定名次）；03/04 为非淘汰积分制、每局各自记分，不产生平局。</div>
-
-  <h3 class="sub-head">违规与判罚</h3>
-  <ul class="tick">
-    <li><b>禁止作弊</b>：连点（AC）、自动搭路（Scaffold）、自动瞄准 / KillAura、透视 / 矿透、飞行、加速、卡 BUG、代打、跨队合作、故意送分、消极比赛、辱骂、故意拖延。</li>
-    <li><b>反作弊</b>：四个项目均开启反作弊（02 为地图内，01 / 03 / 04 由服务器 / 管理侧开启）；按情节警告 → 扣分 → 判负 → 取消资格。</li>
-    <li><b>模组 / 材质包</b>：仅允许不带来竞技优势的优化类模组与材质包（白名单见《赛事细则》§六）；禁止战斗 / 自动化 / 透视类模组。</li>
-    <li><b>断线</b>：5 分钟内可重连，超时判负；服务器问题可重赛。</li>
-    <li><b>替补</b>：替补人数不限；场上选手异常超 1 分钟，裁判按顺序派替补上场，选手也可主动申请（经裁判同意）。</li>
-    <li><b>开赛</b>：正常需 01/02 四队各满 4 人、03/04 两队各满 4 人；异常缺人经裁判确认可开赛。</li>
-    <li>每场 1 裁判 + 1 OB，<b>全程直播 + 录制</b>；裁判判罚为最终结果，争议需在 30 分钟内提交。</li>
-  </ul>
-</section>
-
-<!-- ================= 赛程 ================= -->
-<section class="section" id="schedule">
-  <div class="sec-head">
-    <span class="blk"></span>
-    <div><h2>赛程安排</h2><p>2026 年 10 月 3 日 – 10 月 4 日</p></div>
-  </div>
-  <div class="table-wrap">
-    <table class="schedule">
-      <thead><tr><th>日期</th><th>时间</th><th>项目</th><th>阶段</th><th>说明</th></tr></thead>
-      <tbody>
-        <tr><td class="day">10.3</td><td>18:30–19:00</td><td>全体</td><td>签到 / 准备</td><td>队长确认队员在线</td></tr>
-        <tr><td class="day">10.3</td><td>19:00–20:00</td><td>起床战争</td><td>混战</td><td>4v4v4v4，一场定积分</td></tr>
-        <tr><td class="day">10.3</td><td>20:00–22:00</td><td>霜冻狂潮</td><td>竞技</td><td>积分赛</td></tr>
-        <tr><td class="day">10.3</td><td>22:00–22:30</td><td>—</td><td>当日积分公布</td><td>公布起床战争、霜冻狂潮积分</td></tr>
-        <tr><td class="day">10.4</td><td>18:30–19:00</td><td>全体</td><td>签到 / 准备</td><td>队长确认队员在线</td></tr>
-        <tr><td class="day">10.4</td><td>19:00–20:00</td><td>荒芜沙漠</td><td>混战</td><td>4v4v4v4，一场定积分</td></tr>
-        <tr><td class="day">10.4</td><td>20:00–22:00</td><td>空岛围攻</td><td>竞技</td><td>积分赛（每轮两局互换攻守）</td></tr>
-        <tr><td class="day">10.4</td><td>22:00–22:30</td><td>—</td><td>总积分结算</td><td>四项目总积分排名</td></tr>
-        <tr><td class="day">10.4</td><td>22:30–23:00</td><td>—</td><td>颁奖 / 闭幕</td><td>颁发总冠军及各奖项</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="note">每场约 20 分钟；若出现平局或重赛顺延，最晚不超过 23:00。10 月 5 日作为备用日。</div>
 </section>
 
 <!-- ================= 奖项 ================= -->
@@ -233,12 +136,27 @@
     <div><h2>奖项设置</h2><p>总积分排名奖励</p></div>
   </div>
   <div class="awards">
-    <div class="award gold-award"><div class="medal">MVP</div><h3>总冠军 MVP</h3><p>电子奖状 + 服务器称号</b></p></div>
+    <div class="award gold-award"><div class="medal">MVP</div><h3>总冠军 MVP</h3><p>电子奖状 + 服务器称号</p></div>
     <div class="award"><div class="medal">1</div><h3>总冠军</h3><p>电子奖状 + 服务器称号 + <b>正版 Minecraft ×4</b></p></div>
     <div class="award"><div class="medal">2</div><h3>总亚军</h3><p>电子奖状 + 服务器称号</p></div>
     <div class="award"><div class="medal">3</div><h3>总季军</h3><p>电子奖状 + 服务器称号</p></div>
   </div>
   <div class="note">正版 Minecraft 可换为「安卓 / iOS 基岩版正版 ×1 + Steam 版泰拉瑞亚 ×1」。</div>
+</section>
+
+<!-- ================= 社团 ================= -->
+<section class="section" id="clubs">
+  <div class="sec-head">
+    <span class="blk"></span>
+    <div><h2>参赛社团</h2><p>多所学校 MC 社团联合举办</p></div>
+  </div>
+  <div class="clubs">
+    <div class="club"><img src="assets/厦门第一中学红石社-社徽.jpg" alt="厦门第一中学红石社"><span>厦门第一中学红石社</span></div>
+    <div class="club"><img src="assets/厦门双十中学云隅沙盒社-社徽.png" alt="厦门双十中学云隅沙盒社"><span>厦门双十中学云隅沙盒社</span></div>
+    <div class="club"><img src="assets/厦门外国语学校方块创艺社-社徽.png" alt="厦门外国语学校方块创艺社"><span>厦门外国语学校方块创艺社</span></div>
+    <div class="club"><img src="assets/厦门英才学校mc社-社徽.jpg" alt="厦门英才学校 MC 社"><span>厦门英才学校 MC 社</span></div>
+    <div class="club"><img src="assets/厦门市集美中学像素艺术社-社徽.jpg" alt="厦门市集美中学像素艺术社"><span>厦门市集美中学像素艺术社</span></div>
+  </div>
 </section>
 
 <!-- ================= 报名 ================= -->
@@ -269,21 +187,6 @@
   </div>
 </section>
 
-<!-- ================= 社团 ================= -->
-<section class="section" id="clubs">
-  <div class="sec-head">
-    <span class="blk"></span>
-    <div><h2>参赛社团</h2><p>多所学校 MC 社团联合举办</p></div>
-  </div>
-  <div class="clubs">
-    <div class="club"><img src="assets/厦门第一中学红石社-社徽.jpg" alt="厦门第一中学红石社"><span>厦门第一中学红石社</span></div>
-    <div class="club"><img src="assets/厦门双十中学云隅沙盒社-社徽.png" alt="厦门双十中学云隅沙盒社"><span>厦门双十中学云隅沙盒社</span></div>
-    <div class="club"><img src="assets/厦门外国语学校方块创艺社-社徽.png" alt="厦门外国语学校方块创艺社"><span>厦门外国语学校方块创艺社</span></div>
-    <div class="club"><img src="assets/厦门英才学校mc社-社徽.jpg" alt="厦门英才学校 MC 社"><span>厦门英才学校 MC 社</span></div>
-    <div class="club"><img src="assets/厦门市集美中学像素艺术社-社徽.jpg" alt="厦门市集美中学像素艺术社"><span>厦门市集美中学像素艺术社</span></div>
-  </div>
-</section>
-
 </main>
 
 <footer class="footer">
@@ -293,14 +196,48 @@
       <p>2026 年 9 月 · 最终解释权归组委会所有</p>
     </div>
     <div class="footer-links">
-      <a href="#about">概述</a>
-      <a href="#projects">项目</a>
-      <a href="#rules">赛制</a>
+      <a href="projects.html">项目</a>
+      <a href="rules.html">赛制</a>
+      <a href="teams.html">队伍</a>
+      <a href="schedule.html">赛程</a>
+      <a href="#awards">奖项</a>
+      <a href="#clubs">社团</a>
       <a href="#join">报名</a>
     </div>
   </div>
 </footer>
 
-<script src="app.js?v=2"></script>
+<script src="app.js?v=4"></script>
+<script src="data/teams.js"></script>
+<script>
+(function () {
+  'use strict';
+  var D = window.LSF_TEAMS;
+  if (!D || !D.teams) return;
+  var host = document.getElementById('teamPreview');
+  if (!host) return;
+  D.teams.forEach(function (t) {
+    var a = document.createElement('a');
+    a.className = 'tmini';
+    a.setAttribute('href', 'teams.html');
+    var head = document.createElement('span');
+    head.className = 'tmini-head';
+    var num = document.createElement('span');
+    num.className = 'tmini-num';
+    num.textContent = t.id;
+    var name = document.createElement('span');
+    name.className = 'tmini-name';
+    name.textContent = t.name;
+    head.appendChild(num);
+    head.appendChild(name);
+    a.appendChild(head);
+    var meta = document.createElement('span');
+    meta.className = 'tmini-meta';
+    meta.textContent = t.members.length + ' 人 · ' + t.schools.join(' / ');
+    a.appendChild(meta);
+    host.appendChild(a);
+  });
+})();
+</script>
 </body>
 </html>

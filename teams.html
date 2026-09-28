@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="联锁对抗S0 · 参赛队伍总览">
+<title>参赛队伍 · 联锁对抗S0</title>
+<link rel="icon" href="assets/海报-圆形版.png">
+<link rel="stylesheet" href="styles.css?v=4">
+</head>
+<body>
+
+<a class="skip" href="#main">跳到内容</a>
+<div class="progress" id="progress"></div>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">
+      <img src="assets/海报-圆形版.png" alt="联锁对抗S0">
+      <span>联锁对抗<em>S0</em></span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="菜单">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html#about">概述</a>
+      <a href="projects.html">项目</a>
+      <a href="rules.html">赛制计分</a>
+      <a href="teams.html" class="active">队伍</a>
+      <a href="schedule.html">赛程</a>
+      <a href="index.html#awards">奖项</a>
+      <a href="index.html#clubs">社团</a>
+      <a class="nav-cta" href="index.html#join">报名</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="section" id="teams">
+  <div class="sec-head">
+    <span class="blk"></span>
+    <div><h2>参赛队伍</h2><p>共 4 支队伍 · 队伍全项目参赛</p></div>
+  </div>
+
+  <div class="facts" id="teamStats"></div>
+
+  <div class="team-grid" id="teamGrid"></div>
+
+  <noscript>
+    <div class="note">未启用 JavaScript，以下为静态名单。</div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>编号</th><th>队伍</th><th>学校</th><th>队员</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>待定1</td><td>厦门双十中学</td><td>OOrangeee7794、MZYX99、k7zrx、lapis_lazuli、roger</td></tr>
+          <tr><td>2</td><td>dewier</td><td>厦门市集美中学</td><td>CabbageFani、ld8zz、Rocketssaid、Moibalao、?</td></tr>
+          <tr><td>3</td><td>待定3</td><td>厦门海沧实验中学 / 厦门同安一中滨海校区</td><td>12Glad、Qute_Girl_Poxiao、Shino_wu、lookhilo</td></tr>
+          <tr><td>4</td><td>待定4</td><td>厦门外国语学校 / 厦门英才学校 / 义乌市第五中学</td><td>watch_the_moon、Broken_Mirror、odoo、chixue_bypass_</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </noscript>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <b>MXHA 联锁对抗S0 组委会</b>
+      <p>2026 年 9 月 · 最终解释权归组委会所有</p>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">首页</a>
+      <a href="projects.html">项目</a>
+      <a href="rules.html">赛制</a>
+      <a href="teams.html">队伍</a>
+      <a href="schedule.html">赛程</a>
+      <a href="index.html#join">报名</a>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js?v=4"></script>
+<script src="data/teams.js"></script>
+<script>
+(function () {
+  'use strict';
+  var D = window.LSF_TEAMS;
+  if (!D || !D.teams) return;
+
+  var teams = D.teams;
+  var grid = document.getElementById('teamGrid');
+  var stats = document.getElementById('teamStats');
+
+  /* 统计 */
+  var memberCount = 0;
+  var schoolMap = {};
+  teams.forEach(function (t) {
+    memberCount += t.members.length;
+    t.schools.forEach(function (s) { schoolMap[s] = 1; });
+  });
+  var schoolList = Object.keys(schoolMap);
+  if (stats) {
+    stats.innerHTML =
+      '<div class="fact"><span>参赛队伍</span><b>' + teams.length + ' 支</b></div>' +
+      '<div class="fact"><span>参赛选手</span><b>' + memberCount + ' 人</b></div>' +
+      '<div class="fact"><span>覆盖学校</span><b>' + schoolList.length + ' 所</b></div>' +
+      '<div class="fact"><span>比赛项目</span><b>4 项</b></div>';
+  }
+
+  /* 队伍卡片 */
+  teams.forEach(function (t) {
+    var card = document.createElement('article');
+    card.className = 'team-card';
+    card.setAttribute('data-team-id', String(t.id));
+    card.setAttribute('data-schools', t.schools.join('|'));
+
+    var top = document.createElement('div');
+    top.className = 'team-top';
+    var num = document.createElement('span');
+    num.className = 'team-num';
+    num.textContent = t.id;
+    top.appendChild(num);
+
+    var name = document.createElement('h3');
+    name.className = 'team-name';
+    name.textContent = t.name;
+    top.appendChild(name);
+
+    if (t.placeholder) {
+      var tag = document.createElement('span');
+      tag.className = 'team-tag';
+      tag.textContent = '队名待定';
+      top.appendChild(tag);
+    }
+    card.appendChild(top);
+
+    var schools = document.createElement('div');
+    schools.className = 'team-schools';
+    t.schools.forEach(function (s) {
+      var st = document.createElement('span');
+      st.className = 'school-tag';
+      st.textContent = s;
+      schools.appendChild(st);
+    });
+    card.appendChild(schools);
+
+    var ul = document.createElement('ul');
+    ul.className = 'roster';
+    t.members.forEach(function (m) {
+      var li = document.createElement('li');
+      if (m.pending) li.className = 'is-pending';
+      li.textContent = m.mcid;
+      ul.appendChild(li);
+    });
+    card.appendChild(ul);
+
+    var count = document.createElement('div');
+    count.className = 'team-count';
+    count.textContent = t.members.length + ' 名队员';
+    card.appendChild(count);
+
+    grid.appendChild(card);
+  });
+})();
+</script>
+</body>
+</html>
