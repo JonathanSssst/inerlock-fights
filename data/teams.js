@@ -34,7 +34,7 @@ window.LSF_TEAMS = {
       "name": "待定3",
       "placeholder": true,
       "captainTBD": true,
-      "schools": ["厦门海沧实验中学", "厦门同安一中滨海校区"],
+      "schools": ["厦门海沧实验中学", "厦门同安一中"],
       "members": [
         { "mcid": "12Glad" },
         { "mcid": "Qute_Girl_Poxiao" },
