@@ -52,7 +52,8 @@ window.LSF_TEAMS = {
         { "mcid": "watch_the_moon" },
         { "mcid": "Broken_Mirror" },
         { "mcid": "odoo" },
-        { "mcid": "chixue_bypass_" }
+        { "mcid": "chixue_bypass_" },
+        { "mcid": "FangYuan" }
       ]
     }
   ]
