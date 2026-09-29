@@ -4,7 +4,8 @@
   /* ---------- 时间节点（+08:00） ---------- */
   var TIMES = {
     regStart:  new Date('2026-09-25T12:00:00+08:00'),
-    regEnd:    new Date('2026-09-30T23:59:00+08:00'),
+    regEnd:    new Date('2026-10-01T12:00:00+08:00'),
+    schedule:  new Date('2026-10-01T21:00:00+08:00'),
     eventStart:new Date('2026-10-03T18:30:00+08:00'),
     eventEnd:  new Date('2026-10-04T23:00:00+08:00')
   };
@@ -15,7 +16,7 @@
     if (now < TIMES.regEnd)   return { key: 'open',  text: '报名进行中' };
     if (now < TIMES.eventStart) return { key: 'closed', text: '报名已截止' };
     if (now < TIMES.eventEnd) return { key: 'live',  text: '比赛进行中' };
-    return { key: 'ended', text: '活动已结束' };
+    return { key: 'ended', text: '比赛已结束' };
   }
 
   var statusBadge = document.getElementById('statusBadge');
@@ -37,6 +38,7 @@
     var targets = [
       { t: TIMES.regStart,   label: '报名开启' },
       { t: TIMES.regEnd,     label: '报名截止' },
+      { t: TIMES.schedule,   label: '赛程公布' },
       { t: TIMES.eventStart, label: '比赛开始' },
       { t: TIMES.eventEnd,   label: '比赛结束' }
     ];
@@ -45,7 +47,7 @@
       if (targets[i].t && now < targets[i].t) { next = targets[i]; break; }
     }
     if (!next) {
-      cdEl.innerHTML = '<div class="cd-label">活动已结束，感谢参与！</div>';
+      cdEl.innerHTML = '<div class="cd-label">比赛已结束，感谢参与！</div>';
       return;
     }
     var diff = next.t - now;

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<title>联锁对抗S0 · 宣传海报</title>
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:#c9d8bf;font-family:"Microsoft YaHei","PingFang SC","Noto Sans SC",sans-serif}
+  .poster{position:relative;width:1080px;height:1620px;overflow:hidden;
+    background:linear-gradient(155deg,#fbfdf9 0%,#eef6e8 55%,#e3efd9 100%);color:#1c2a1e;
+    padding:58px 64px;display:flex;flex-direction:column}
+  .poster::before{content:"";position:absolute;inset:0;pointer-events:none;
+    background:radial-gradient(760px 420px at 85% -8%,rgba(106,176,76,.18),transparent 60%),
+               radial-gradient(620px 360px at 5% 108%,rgba(217,165,32,.16),transparent 60%)}
+  .blob{position:absolute;border-radius:999px;pointer-events:none;opacity:.55;filter:blur(3px)}
+  .blob.a{width:240px;height:240px;right:-80px;top:230px;background:radial-gradient(circle,#bfe0ac,transparent 70%)}
+  .blob.b{width:200px;height:200px;left:-70px;bottom:210px;background:radial-gradient(circle,#f6e3ad,transparent 70%)}
+  .z{position:relative;z-index:2}
+
+  .head{display:flex;flex-direction:column;align-items:center;text-align:center;gap:16px}
+  .titlewrap{display:flex;align-items:center;gap:20px}
+  .titlewrap img{height:168px;width:auto;filter:drop-shadow(5px 5px 0 rgba(106,176,76,.16))}
+  .titlewrap .s0{font-size:118px;font-weight:900;color:#d9a520;line-height:1;
+    text-shadow:5px 5px 0 rgba(106,176,76,.18)}
+  .sub{font-size:27px;font-weight:800;letter-spacing:3px;color:#3c4d36}
+  .chips{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+  .chip{font-size:19px;font-weight:700;color:#3c4d36;background:#fff;border:2px solid #dde8d6;
+    border-radius:999px;padding:8px 20px;box-shadow:0 4px 12px rgba(28,42,30,.06)}
+
+  .hero{margin-top:24px;height:300px;border-radius:22px;overflow:hidden;border:6px solid #fff;
+    background:#e7f1de;box-shadow:0 22px 46px rgba(28,42,30,.18);display:flex;align-items:center;justify-content:center}
+  .hero img{width:100%;height:100%;object-fit:contain}
+
+  .projects{margin-top:24px;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  .proj{background:#fff;border:2px solid #dde8d6;border-radius:18px;overflow:hidden;
+    box-shadow:0 10px 26px rgba(28,42,30,.08);display:flex;flex-direction:column}
+  .proj .cover{aspect-ratio:16/11;overflow:hidden;background:#e7f1de}
+  .proj .cover img{width:100%;height:100%;object-fit:cover;display:block}
+  .proj .body{padding:13px 15px 16px}
+  .proj .tag{font-size:13px;font-weight:800;color:#4f8f3a}
+  .proj h3{font-size:22px;font-weight:900;margin:6px 0 3px}
+  .proj .en{font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#93a08e;font-weight:800}
+
+  .facts{margin-top:22px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .fact{display:flex;align-items:center;gap:14px;background:#fff;border:2px solid #dde8d6;
+    border-radius:16px;padding:15px 20px;box-shadow:0 8px 20px rgba(28,42,30,.06)}
+  .fact .k{font-size:17px;color:#5c6b5a;font-weight:800;white-space:nowrap}
+  .fact .v{font-size:21px;font-weight:900;margin-left:auto}
+
+  .note{margin-top:20px;background:#eaf5e4;border:2px dashed rgba(79,143,58,.45);border-radius:16px;
+    padding:16px 24px;display:grid;gap:9px}
+  .note div{font-size:18px;color:#33452c;font-weight:600;position:relative;padding-left:24px}
+  .note div::before{content:"";position:absolute;left:0;top:8px;width:11px;height:11px;border-radius:4px;
+    background:linear-gradient(135deg,#6ab04c,#4f8f3a)}
+
+  .foot{margin-top:auto;padding-top:18px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+  .clubs{display:flex;gap:12px;align-items:center}
+  .clubs img{width:58px;height:58px;object-fit:contain}
+  .meta{text-align:right}
+  .meta b{font-size:20px;font-weight:900}
+  .meta p{font-size:16px;color:#5c6b5a;margin:5px 0 0;font-weight:700}
+</style>
+</head>
+<body>
+<div class="poster">
+  <span class="blob a"></span><span class="blob b"></span>
+
+  <div class="head z">
+    <div class="titlewrap">
+      <img src="assets/title.png" alt="联锁对抗">
+      <span class="s0">S0</span>
+    </div>
+    <div class="sub">厦门多校联合 · Minecraft 竞技赛</div>
+    <div class="chips">
+      <span class="chip">2026.10.03 – 10.04</span>
+      <span class="chip">Java 1.21.11</span>
+      <span class="chip">四大项目 · 积分赛制</span>
+    </div>
+  </div>
+
+  <div class="hero z">
+    <img src="assets/海报-横版.jpg" alt="联锁对抗S0">
+  </div>
+
+  <div class="projects z">
+    <div class="proj">
+      <div class="cover"><img src="assets/project-bedwars.png" alt=""></div>
+      <div class="body"><div class="tag">01 · 混战 4v4v4v4</div><h3>起床战争</h3><div class="en">Bed Wars</div></div>
+    </div>
+    <div class="proj">
+      <div class="cover"><img src="assets/project-desert.png" alt=""></div>
+      <div class="body"><div class="tag">02 · 混战 4v4v4v4</div><h3>荒芜沙漠</h3><div class="en">Desolate Desert</div></div>
+    </div>
+    <div class="proj">
+      <div class="cover"><img src="assets/project-siege.png" alt=""></div>
+      <div class="body"><div class="tag">03 · 竞技 4v4</div><h3>空岛围攻</h3><div class="en">Island Siege</div></div>
+    </div>
+    <div class="proj">
+      <div class="cover"><img src="assets/project-frostbite.png" alt=""></div>
+      <div class="body"><div class="tag">04 · 竞技 4v4</div><h3>霜冻狂潮</h3><div class="en">Frostbite Frenzy</div></div>
+    </div>
+  </div>
+
+  <div class="facts z">
+    <div class="fact"><span class="k">活动时间</span><span class="v">10.03 – 10.04</span></div>
+    <div class="fact"><span class="k">报名截止</span><span class="v">10.01 12:00</span></div>
+    <div class="fact"><span class="k">比赛平台</span><span class="v">Java 1.21.11</span></div>
+    <div class="fact"><span class="k">队伍规模</span><span class="v">首发 4 人 · 替补不限</span></div>
+  </div>
+
+  <div class="note z">
+    <div>混战项目：起床战争、荒芜沙漠（4v4v4v4，一场定积分）</div>
+    <div>竞技项目：空岛围攻、霜冻狂潮（4v4，非淘汰积分制）</div>
+    <div>队伍参加全部四个项目，缺项按该项目最后一名积分计算</div>
+    <div>允许同校多队、跨校组队（需注明）；报名截止后锁名单</div>
+  </div>
+
+  <div class="foot z">
+    <div class="clubs">
+      <img src="assets/厦门第一中学红石社-社徽.jpg" alt="">
+      <img src="assets/厦门双十中学云隅沙盒社-社徽.png" alt="">
+      <img src="assets/厦门外国语学校方块创艺社-社徽.png" alt="">
+      <img src="assets/厦门英才学校mc社-社徽.jpg" alt="">
+      <img src="assets/厦门市集美中学像素艺术社-社徽.jpg" alt="">
+    </div>
+    <div class="meta">
+      <b>MXHA 联锁对抗S0 组委会</b>
+      <p>官方 Q 群 1127080247</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
