@@ -42,7 +42,7 @@ window.LSF_TEAMS = {
           "mcid": "Rocketssaid"
         },
         {
-          "mcid": "ld8zz"
+          "mcid": "clh_lai"
         },
         {
           "mcid": "Moibalao"
@@ -51,13 +51,17 @@ window.LSF_TEAMS = {
     },
     {
       "id": 3,
-      "name": "待定3",
-      "placeholder": true,
-      "captainTBD": true,
+      "name": "爱拉屎的小蜜蜂",
+      "placeholder": false,
+      "captainTBD": false,
       "schools": [
         "厦门外国语学校"
       ],
       "members": [
+        {
+          "mcid": "FangYuan",
+          "captain": true
+        },
         {
           "mcid": "watch_the_moon"
         },
@@ -69,9 +73,6 @@ window.LSF_TEAMS = {
         },
         {
           "mcid": "banligugu"
-        },
-        {
-          "mcid": "FangYuan"
         },
         {
           "mcid": "Riker"
@@ -87,20 +88,20 @@ window.LSF_TEAMS = {
       "placeholder": false,
       "captainTBD": false,
       "schools": [
-        "厦门双十中学",
         "厦门英才学校",
-        "厦门同安一中"
+        "厦门同安一中",
+        "厦门双十中学"
       ],
       "members": [
         {
-          "mcid": "Shino_wu",
+          "mcid": "odoo",
           "captain": true
         },
         {
-          "mcid": "MZYX99"
+          "mcid": "Shino_wu"
         },
         {
-          "mcid": "odoo"
+          "mcid": "MZYX99"
         },
         {
           "mcid": "zkisl"
@@ -113,14 +114,22 @@ window.LSF_TEAMS = {
       "placeholder": true,
       "captainTBD": true,
       "schools": [
-        "厦门第一中学"
+        "厦门第一中学",
+        "厦门同安一中",
+        "厦门海沧实验中学"
       ],
       "members": [
         {
-          "mcid": "sxqh"
+          "mcid": "ABginger"
         },
         {
-          "mcid": "ABginger"
+          "mcid": "lookhilo"
+        },
+        {
+          "mcid": "12Glad"
+        },
+        {
+          "mcid": "Qute_Girl_Poxiao"
         }
       ]
     },
@@ -130,22 +139,22 @@ window.LSF_TEAMS = {
       "placeholder": true,
       "captainTBD": true,
       "schools": [
-        "厦门同安一中",
-        "厦门海沧实验中学",
-        "深圳"
+        "厦门第一中学",
+        "厦门外国语学校",
+        "厦门双十中学"
       ],
       "members": [
         {
-          "mcid": "lookhilo"
+          "mcid": "sxqh"
         },
         {
-          "mcid": "12Glad"
+          "mcid": "EV_xuan"
         },
         {
-          "mcid": "Qute_Girl_Poxiao"
+          "mcid": "sunsz"
         },
         {
-          "mcid": "Yzarc__"
+          "mcid": "Rhodesisland"
         }
       ]
     }
