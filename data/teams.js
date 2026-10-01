@@ -1,5 +1,5 @@
 window.LSF_TEAMS = {
-  "updated": "2026-09-29",
+  "updated": "2026-10-01",
   "event": "联锁对抗S0",
   "teams": [
     {
@@ -7,26 +7,46 @@ window.LSF_TEAMS = {
       "name": "待定1",
       "placeholder": true,
       "captainTBD": true,
-      "schools": ["厦门双十中学"],
+      "schools": [
+        "厦门双十中学"
+      ],
       "members": [
-        { "mcid": "OOrangeee7794" },
-        { "mcid": "MZYX99" },
-        { "mcid": "k7zrx" },
-        { "mcid": "lapis_lazuli" },
-        { "mcid": "roger" }
+        {
+          "mcid": "k7zrx"
+        },
+        {
+          "mcid": "OOrangeee7794"
+        },
+        {
+          "mcid": "lapis_lazuli"
+        },
+        {
+          "mcid": "roger"
+        }
       ]
     },
     {
       "id": 2,
       "name": "dewier",
       "placeholder": false,
-      "schools": ["厦门市集美中学"],
+      "captainTBD": false,
+      "schools": [
+        "厦门市集美中学"
+      ],
       "members": [
-        { "mcid": "CabbageFani", "captain": true },
-        { "mcid": "ld8zz" },
-        { "mcid": "Rocketssaid" },
-        { "mcid": "Moibalao" },
-        { "mcid": "?", "pending": true }
+        {
+          "mcid": "Rocketssaid"
+        },
+        {
+          "mcid": "ld8zz"
+        },
+        {
+          "mcid": "CabbageFani",
+          "captain": true
+        },
+        {
+          "mcid": "Moibalao"
+        }
       ]
     },
     {
@@ -34,12 +54,28 @@ window.LSF_TEAMS = {
       "name": "待定3",
       "placeholder": true,
       "captainTBD": true,
-      "schools": ["厦门海沧实验中学", "厦门同安一中"],
+      "schools": [
+        "厦门外国语学校"
+      ],
       "members": [
-        { "mcid": "12Glad" },
-        { "mcid": "Qute_Girl_Poxiao" },
-        { "mcid": "Shino_wu" },
-        { "mcid": "lookhilo" }
+        {
+          "mcid": "watch_the_moon"
+        },
+        {
+          "mcid": "Broken_Mirror"
+        },
+        {
+          "mcid": "Wind_Forest"
+        },
+        {
+          "mcid": "banligugu"
+        },
+        {
+          "mcid": "FangYuan"
+        },
+        {
+          "mcid": "Riker"
+        }
       ]
     },
     {
@@ -47,13 +83,66 @@ window.LSF_TEAMS = {
       "name": "待定4",
       "placeholder": true,
       "captainTBD": true,
-      "schools": ["厦门外国语学校", "厦门英才学校", "义乌市第五中学"],
+      "schools": [
+        "厦门双十中学",
+        "厦门英才学校",
+        "厦门同安一中"
+      ],
       "members": [
-        { "mcid": "watch_the_moon" },
-        { "mcid": "Broken_Mirror" },
-        { "mcid": "odoo" },
-        { "mcid": "chixue_bypass_" },
-        { "mcid": "FangYuan" }
+        {
+          "mcid": "MZYX99"
+        },
+        {
+          "mcid": "odoo"
+        },
+        {
+          "mcid": "Shino_wu"
+        },
+        {
+          "mcid": "zkisl"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "待定5",
+      "placeholder": true,
+      "captainTBD": true,
+      "schools": [
+        "厦门第一中学"
+      ],
+      "members": [
+        {
+          "mcid": "sxqh"
+        },
+        {
+          "mcid": "ABginger"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "待定6",
+      "placeholder": true,
+      "captainTBD": true,
+      "schools": [
+        "厦门同安一中",
+        "厦门海沧实验中学",
+        "深圳"
+      ],
+      "members": [
+        {
+          "mcid": "lookhilo"
+        },
+        {
+          "mcid": "12Glad"
+        },
+        {
+          "mcid": "Qute_Girl_Poxiao"
+        },
+        {
+          "mcid": "Yzarc__"
+        }
       ]
     }
   ]
