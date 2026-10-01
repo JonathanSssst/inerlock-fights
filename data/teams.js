@@ -35,14 +35,14 @@ window.LSF_TEAMS = {
       ],
       "members": [
         {
+          "mcid": "CabbageFani",
+          "captain": true
+        },
+        {
           "mcid": "Rocketssaid"
         },
         {
           "mcid": "ld8zz"
-        },
-        {
-          "mcid": "CabbageFani",
-          "captain": true
         },
         {
           "mcid": "Moibalao"
@@ -83,9 +83,9 @@ window.LSF_TEAMS = {
     },
     {
       "id": 4,
-      "name": "待定4",
-      "placeholder": true,
-      "captainTBD": true,
+      "name": "因式分解喵喵喵",
+      "placeholder": false,
+      "captainTBD": false,
       "schools": [
         "厦门双十中学",
         "厦门英才学校",
@@ -93,13 +93,14 @@ window.LSF_TEAMS = {
       ],
       "members": [
         {
+          "mcid": "Shino_wu",
+          "captain": true
+        },
+        {
           "mcid": "MZYX99"
         },
         {
           "mcid": "odoo"
-        },
-        {
-          "mcid": "Shino_wu"
         },
         {
           "mcid": "zkisl"
