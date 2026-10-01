@@ -75,6 +75,9 @@ window.LSF_TEAMS = {
         },
         {
           "mcid": "Riker"
+        },
+        {
+          "mcid": "CH1K1NG"
         }
       ]
     },
