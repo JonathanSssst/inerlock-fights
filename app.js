@@ -6,8 +6,8 @@
     regStart:  new Date('2026-09-25T12:00:00+08:00'),
     regEnd:    new Date('2026-10-01T12:00:00+08:00'),
     schedule:  new Date('2026-10-01T21:00:00+08:00'),
-    eventStart:new Date('2026-10-03T18:00:00+08:00'),
-    eventEnd:  new Date('2026-10-04T22:00:00+08:00')
+    eventStart:new Date('2026-10-03T19:00:00+08:00'),
+    eventEnd:  new Date('2026-10-04T22:30:00+08:00')
   };
 
   /* ---------- 状态 ---------- */

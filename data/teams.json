@@ -4,15 +4,16 @@
   "teams": [
     {
       "id": 1,
-      "name": "待定1",
-      "placeholder": true,
-      "captainTBD": true,
+      "name": "百战成区",
+      "placeholder": false,
+      "captainTBD": false,
       "schools": [
         "厦门双十中学"
       ],
       "members": [
         {
-          "mcid": "k7zrx"
+          "mcid": "k7zrx",
+          "captain": true
         },
         {
           "mcid": "OOrangeee7794"
@@ -90,7 +91,8 @@
       "schools": [
         "厦门英才学校",
         "厦门同安一中",
-        "厦门双十中学"
+        "厦门双十中学",
+        "厦门第一中学"
       ],
       "members": [
         {
@@ -105,6 +107,9 @@
         },
         {
           "mcid": "zkisl"
+        },
+        {
+          "mcid": "wang_dong_jie"
         }
       ]
     },
@@ -135,26 +140,27 @@
     },
     {
       "id": 6,
-      "name": "待定6",
-      "placeholder": true,
-      "captainTBD": true,
+      "name": "四个好汉一个帮",
+      "placeholder": false,
+      "captainTBD": false,
       "schools": [
-        "厦门第一中学",
+        "厦门双十中学",
         "厦门外国语学校",
-        "厦门双十中学"
+        "厦门第一中学"
       ],
       "members": [
         {
-          "mcid": "sxqh"
-        },
-        {
-          "mcid": "EV_xuan"
+          "mcid": "Rhodesisland",
+          "captain": true
         },
         {
           "mcid": "sunsz"
         },
         {
-          "mcid": "Rhodesisland"
+          "mcid": "EV_xuan"
+        },
+        {
+          "mcid": "sxqh"
         }
       ]
     }
