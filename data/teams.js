@@ -115,23 +115,24 @@ window.LSF_TEAMS = {
     },
     {
       "id": 5,
-      "name": "待定5",
-      "placeholder": true,
-      "captainTBD": true,
+      "name": "消音中性笔（）",
+      "placeholder": false,
+      "captainTBD": false,
       "schools": [
-        "厦门第一中学",
+        "厦门海沧实验中学",
         "厦门同安一中",
-        "厦门海沧实验中学"
+        "厦门第一中学"
       ],
       "members": [
         {
-          "mcid": "ABginger"
+          "mcid": "12Glad",
+          "captain": true
         },
         {
           "mcid": "lookhilo"
         },
         {
-          "mcid": "12Glad"
+          "mcid": "ABginger"
         },
         {
           "mcid": "Qute_Girl_Poxiao"
