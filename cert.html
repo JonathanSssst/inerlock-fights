@@ -6,7 +6,7 @@
 <meta name="description" content="联锁对抗S0 · 冠军奖状领取">
 <title>冠军奖状领取 · 联锁对抗S0</title>
 <link rel="icon" href="assets/海报-圆形版.png">
-<link rel="stylesheet" href="styles.css?v=37">
+<link rel="stylesheet" href="styles.css?v=38">
 </head>
 <body>
 
@@ -38,9 +38,10 @@
   </div>
 
   <div class="cert-box">
-    <p class="cert-tip">请输入你的 <b>MC ID</b> 领取冠军奖状（限冠军队成员）。</p>
+    <p class="cert-tip">请输入你的 <b>MC ID</b> 与 <b>认领码</b> 领取冠军奖状（限冠军队成员）。认领码由组委会发放。</p>
     <div class="cert-form">
       <input id="mcid" type="text" placeholder="输入 MC ID，例如 odoo" autocomplete="off" spellcheck="false">
+      <input id="code" type="text" placeholder="输入认领码" autocomplete="off" spellcheck="false">
       <button class="btn btn-primary" id="claimBtn" type="button">领取奖状</button>
     </div>
     <div id="result" class="cert-result"></div>
@@ -60,35 +61,40 @@
   </div>
 </footer>
 
-<script src="app.js?v=37"></script>
-<script src="data/certs.js?v=37"></script>
+<script src="app.js?v=38"></script>
+<script src="data/certs.js?v=38"></script>
 <script>
 (function () {
   'use strict';
   var D = window.LSF_CERTS;
   var input = document.getElementById('mcid');
+  var codeInput = document.getElementById('code');
   var btn = document.getElementById('claimBtn');
   var result = document.getElementById('result');
-  if (!D || !input || !btn || !result) return;
+  if (!D || !input || !codeInput || !btn || !result) return;
+  var members = D.members || {};
 
   function claim() {
-    var v = input.value.trim();
-    if (!v) { result.innerHTML = '<p class="cert-err">请输入 MC ID。</p>'; return; }
-    var hit = null;
-    for (var i = 0; i < D.members.length; i++) {
-      if (D.members[i].toLowerCase() === v.toLowerCase()) { hit = D.members[i]; break; }
+    var mcid = input.value.trim();
+    var code = codeInput.value.trim();
+    if (!mcid) { result.innerHTML = '<p class="cert-err">请输入 MC ID。</p>'; return; }
+    if (!code) { result.innerHTML = '<p class="cert-err">请输入认领码。</p>'; return; }
+    var key = null;
+    for (var k in members) {
+      if (k.toLowerCase() === mcid.toLowerCase()) { key = k; break; }
     }
-    if (!hit) {
-      result.innerHTML = '<p class="cert-err">未找到该 MC ID。请确认是否为冠军队成员，或联系组委会核对。</p>';
+    if (!key || String(members[key]).toUpperCase() !== code.toUpperCase()) {
+      result.innerHTML = '<p class="cert-err">MC ID 或认领码不正确，请核对后重试。</p>';
       return;
     }
-    var src = 'assets/cert-' + hit + '.png';
+    var src = 'assets/cert-' + key + '.png';
     result.innerHTML =
-      '<img class="cert-img" src="' + src + '" alt="冠军奖状' + hit + '">' +
-      '<div><a class="btn btn-primary" href="' + src + '" download="奖状-' + hit + '.png">下载奖状 →</a></div>';
+      '<img class="cert-img" src="' + src + '" alt="冠军奖状' + key + '">' +
+      '<div><a class="btn btn-primary" href="' + src + '" download="奖状-' + key + '.png">下载奖状 →</a></div>';
   }
   btn.addEventListener('click', claim);
   input.addEventListener('keydown', function (e) { if (e.key === 'Enter') claim(); });
+  codeInput.addEventListener('keydown', function (e) { if (e.key === 'Enter') claim(); });
 })();
 </script>
 </body>
