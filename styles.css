@@ -331,3 +331,14 @@ td.ph{color:var(--muted);font-weight:600}
 
 
 
+
+
+/* ===== 奖状领取 ===== */
+.cert-box{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);max-width:820px}
+.cert-tip{font-size:15px;color:#3c4d36;margin-bottom:16px}
+.cert-form{display:flex;gap:10px;flex-wrap:wrap}
+.cert-form input{flex:1;min-width:220px;padding:12px 16px;border:1px solid var(--line);border-radius:11px;font-size:15px;font-family:inherit;outline:none}
+.cert-form input:focus{border-color:var(--grass)}
+.cert-result{margin-top:20px}
+.cert-img{width:100%;border-radius:12px;border:1px solid var(--line);box-shadow:var(--shadow);margin-bottom:14px}
+.cert-err{color:#c0504d;font-size:14px;background:#fdf1f0;border:1px solid #f2d3d2;border-radius:10px;padding:10px 14px}

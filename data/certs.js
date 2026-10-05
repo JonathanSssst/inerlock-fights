@@ -1,0 +1,5 @@
+window.LSF_CERTS = {
+  "award": "总冠军",
+  "team": "因式分解喵喵喵",
+  "members": ["odoo", "Shino_wu", "MZYX99", "zkisl", "wang_dong_jie"]
+};

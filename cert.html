@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="联锁对抗S0 · 冠军奖状领取">
+<title>冠军奖状领取 · 联锁对抗S0</title>
+<link rel="icon" href="assets/海报-圆形版.png">
+<link rel="stylesheet" href="styles.css?v=37">
+</head>
+<body>
+
+<a class="skip" href="#main">跳到内容</a>
+<div class="progress" id="progress"></div>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html"><img src="assets/海报-圆形版.png" alt="联锁对抗S0"><span>联锁对抗<em>S0</em></span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="菜单">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html#about">概述</a>
+      <a href="projects.html">项目</a>
+      <a href="rules.html">赛制计分</a>
+      <a href="teams.html">队伍</a>
+      <a href="schedule.html">赛程</a>
+      <a href="index.html#awards">奖项</a>
+      <a href="index.html#clubs">社团</a>
+      <a class="nav-cta" href="index.html#join">报名</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="section">
+  <div class="sec-head">
+    <span class="blk"></span>
+    <div><h2>冠军奖状领取</h2><p>联锁对抗 S0 · 总冠军 <b>因式分解喵喵喵</b></p></div>
+  </div>
+
+  <div class="cert-box">
+    <p class="cert-tip">请输入你的 <b>MC ID</b> 领取冠军奖状（限冠军队成员）。</p>
+    <div class="cert-form">
+      <input id="mcid" type="text" placeholder="输入 MC ID，例如 odoo" autocomplete="off" spellcheck="false">
+      <button class="btn btn-primary" id="claimBtn" type="button">领取奖状</button>
+    </div>
+    <div id="result" class="cert-result"></div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div><b>MXHA 联锁对抗S0 组委会</b><p>2026 年 10 月 · 最终解释权归组委会所有</p></div>
+    <div class="footer-links">
+      <a href="index.html">首页</a>
+      <a href="teams.html">队伍</a>
+      <a href="schedule.html">赛程</a>
+      <a href="index.html#join">报名</a>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js?v=37"></script>
+<script src="data/certs.js?v=37"></script>
+<script>
+(function () {
+  'use strict';
+  var D = window.LSF_CERTS;
+  var input = document.getElementById('mcid');
+  var btn = document.getElementById('claimBtn');
+  var result = document.getElementById('result');
+  if (!D || !input || !btn || !result) return;
+
+  function claim() {
+    var v = input.value.trim();
+    if (!v) { result.innerHTML = '<p class="cert-err">请输入 MC ID。</p>'; return; }
+    var hit = null;
+    for (var i = 0; i < D.members.length; i++) {
+      if (D.members[i].toLowerCase() === v.toLowerCase()) { hit = D.members[i]; break; }
+    }
+    if (!hit) {
+      result.innerHTML = '<p class="cert-err">未找到该 MC ID。请确认是否为冠军队成员，或联系组委会核对。</p>';
+      return;
+    }
+    var src = 'assets/cert-' + hit + '.png';
+    result.innerHTML =
+      '<img class="cert-img" src="' + src + '" alt="冠军奖状' + hit + '">' +
+      '<div><a class="btn btn-primary" href="' + src + '" download="奖状-' + hit + '.png">下载奖状 →</a></div>';
+  }
+  btn.addEventListener('click', claim);
+  input.addEventListener('keydown', function (e) { if (e.key === 'Enter') claim(); });
+})();
+</script>
+</body>
+</html>
