@@ -1,6 +1,7 @@
 window.LSF_CERTS = {
   "award": "总冠军",
   "team": "因式分解喵喵喵",
+  "teamCode": "GT26MX",
   "members": {
     "odoo": "HWGQ49",
     "Shino_wu": "6RAFHU",

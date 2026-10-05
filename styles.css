@@ -334,11 +334,39 @@ td.ph{color:var(--muted);font-weight:600}
 
 
 /* ===== 奖状领取 ===== */
-.cert-box{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);max-width:820px}
+.cert-hero{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center;background:linear-gradient(135deg,#fbfdf9,#eef6e8);border:1px solid var(--line);border-radius:var(--radius);padding:26px 28px;box-shadow:var(--shadow);margin-bottom:26px}
+.cert-badge{display:inline-block;font-size:12px;font-weight:800;color:#fff;background:var(--gold);border-radius:999px;padding:4px 14px;letter-spacing:1px}
+.cert-hero-txt h3{font-size:26px;font-weight:900;margin:10px 0 8px}
+.cert-hero-txt p{font-size:14px;color:var(--muted)}
+.cert-hero-art{width:100%;border-radius:12px;border:1px solid var(--line);box-shadow:var(--shadow)}
+.cert-wrap{max-width:900px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+.cert-tabs{display:flex;background:var(--grass-soft);border-bottom:1px solid var(--line)}
+.cert-tab{flex:1;padding:16px;border:0;background:transparent;font-family:inherit;font-size:16px;font-weight:800;color:#3c4d36;cursor:pointer;position:relative;transition:.2s}
+.cert-tab:hover{color:var(--grass)}
+.cert-tab.active{color:var(--grass);background:#fff}
+.cert-tab.active::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--grass)}
+.cert-panel{padding:26px 26px 8px}
 .cert-tip{font-size:15px;color:#3c4d36;margin-bottom:16px}
 .cert-form{display:flex;gap:10px;flex-wrap:wrap}
-.cert-form input{flex:1;min-width:220px;padding:12px 16px;border:1px solid var(--line);border-radius:11px;font-size:15px;font-family:inherit;outline:none}
-.cert-form input:focus{border-color:var(--grass)}
-.cert-result{margin-top:20px}
-.cert-img{width:100%;border-radius:12px;border:1px solid var(--line);box-shadow:var(--shadow);margin-bottom:14px}
-.cert-err{color:#c0504d;font-size:14px;background:#fdf1f0;border:1px solid #f2d3d2;border-radius:10px;padding:10px 14px}
+.cert-form input{flex:1;min-width:200px;padding:12px 16px;border:1px solid var(--line);border-radius:11px;font-size:15px;font-family:inherit;outline:none;transition:.2s}
+.cert-form input:focus{border-color:var(--grass);box-shadow:0 0 0 3px rgba(79,143,58,.12)}
+.cert-form .btn{white-space:nowrap}
+.cert-result{padding:0 26px 26px}
+.cert-result:empty{padding:0}
+.cert-preview{margin-top:18px}
+.cert-img{width:100%;border-radius:12px;border:1px solid var(--line);box-shadow:var(--shadow)}
+.cert-preview-actions{margin-top:16px;text-align:center}
+.cert-err{margin-top:16px;color:#c0504d;font-size:14px;background:#fdf1f0;border:1px solid #f2d3d2;border-radius:10px;padding:10px 14px}
+@media(max-width:820px){.cert-hero{grid-template-columns:1fr}.cert-hero-art{order:-1}}
+
+.cert-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}
+.cert-card{margin:0;background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:14px}
+.cert-card figcaption{font-size:14px;font-weight:800;color:var(--grass);margin-bottom:10px;text-align:center}
+.cert-card img{width:100%;border-radius:10px;border:1px solid var(--line);box-shadow:var(--shadow);margin-bottom:12px}
+.cert-card .btn{display:block;text-align:center}
+@media(max-width:820px){.cert-grid{grid-template-columns:1fr}}
+
+/* ===== 页脚吸底 ===== */
+body{min-height:100vh;display:flex;flex-direction:column}
+main{flex:1 0 auto;width:100%}
+.footer{margin-top:auto}
